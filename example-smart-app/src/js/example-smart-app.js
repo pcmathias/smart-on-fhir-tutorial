@@ -73,7 +73,8 @@
           p.lname = lname;
 
           // Observations
-          p.lymph = getQuantityValueAndUnit(lymph[0]);
+            p.lymph = getQuantityValueAndUnit(lymph[0]);
+	    p.weight = getQuantityValueAndUnit(weight[0]);
 
 
           // Cerner SoF Tutorial Observations
