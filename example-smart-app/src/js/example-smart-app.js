@@ -27,7 +27,8 @@
           type: 'Observation',
           query: {
             code: {
-              $or: ['http://loinc.org|26478-8', 'http://loinc.org|2345-7']
+		$or: ['http://loinc.org|26478-8', 'http://loinc.org|2345-7',
+		     'http://loinc.org|3141-9']
             }
           }
         });
@@ -54,7 +55,8 @@
           }
 
           // Observations
-          lymph = byCodes('26478-8');
+            lymph = byCodes('26478-8');
+	    weight = byCodes('3141-9');
           // Cerner SoF Tutorial Observations
           // var height = byCodes('8302-2');
           // var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
@@ -106,7 +108,8 @@
       lname: {value: ''},
       gender: {value: ''},
       birthdate: {value: ''},
-      lymph: {value: ''}
+	lymph: {value: ''},
+	weight: {value: ''}
 
       // Cerner SoF Tutorial Observations
       // height: {value: ''},
@@ -154,8 +157,9 @@
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
-    $('#lymph').html(p.lymph);
-    
+      $('#lymph').html(p.lymph);
+      $('#weight').html(p.weight);
+
     // Cerner SoF Tutorial Observations
 
     // $('#height').html(p.height);
