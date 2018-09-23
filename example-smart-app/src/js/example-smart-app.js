@@ -42,7 +42,8 @@
           var byCodes = smart.byCodes(obv, 'code');
           console.log("byCodes:");
           console.log(byCodes('26478-8'));
-          console.log(byCodes('2345-7'));
+            console.log(byCodes('2345-7'));
+	    console.log(byCodes('3141-9'));
 
           var gender = patient.gender;
 
@@ -122,7 +123,7 @@
 
   // Helper Function
 
-  function getBloodPressureValue(BPObservations, typeOfPressure) {
+\  function getBloodPressureValue(BPObservations, typeOfPressure) {
     var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
       var BP = observation.component.find(function(component){
